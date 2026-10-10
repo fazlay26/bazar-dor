@@ -1,4 +1,5 @@
 import { PriceItem } from '@/types';
+import Link from 'next/link';
 import React from 'react';
 
 
@@ -21,6 +22,7 @@ const ProductCard = ({ item }: ProductCardProps) => {
     };
 
     return (
+       <Link href={`/products/${item.slug}`}>
         <div className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col justify-between hover:shadow-md transition-shadow">
             
             
@@ -68,6 +70,7 @@ const ProductCard = ({ item }: ProductCardProps) => {
                 </div>
             </div>
         </div>
+       </Link>
     );
 };
 
