@@ -1,6 +1,7 @@
 import HeroSection from "./components/Banner";
 import { PriceItem } from "@/types";
 import PriceIncreaseSection from "./components/PriceIncreaseSection";
+import PriceDecreaseSection from "./components/PriceDecreaseSection";
 
 // API থেকে ডেটা ফেচ করার ফাংশন
 async function getProducts(): Promise<PriceItem[]> {
@@ -22,6 +23,7 @@ export default async function Home() {
     <div>
       <HeroSection></HeroSection>
        <PriceIncreaseSection products={products} />
+        <PriceDecreaseSection products={products} />
     </div>
   );
 }
