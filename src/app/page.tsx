@@ -2,12 +2,13 @@ import HeroSection from "./components/Banner";
 import { PriceItem } from "@/types";
 import PriceIncreaseSection from "./components/PriceIncreaseSection";
 import PriceDecreaseSection from "./components/PriceDecreaseSection";
+import AllProductsSection from "./components/AllProductsSection";
 
-// API থেকে ডেটা ফেচ করার ফাংশন
+
 async function getProducts(): Promise<PriceItem[]> {
     const res = await fetch(
         'https://openapi.programming-hero.com/api/bazardor/products',
-        { next: { revalidate: 3600 } } // ১ ঘণ্টা পরপর ডেটা রিফ্রেশ হবে
+        { next: { revalidate: 3600 } }
     );
     
     if (!res.ok) {
@@ -24,6 +25,7 @@ export default async function Home() {
       <HeroSection></HeroSection>
        <PriceIncreaseSection products={products} />
         <PriceDecreaseSection products={products} />
+        <AllProductsSection products={products} />
     </div>
   );
 }
