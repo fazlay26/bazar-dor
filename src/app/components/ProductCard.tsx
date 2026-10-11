@@ -29,7 +29,7 @@ const ProductCard = ({ item }: ProductCardProps) => {
             <div className="flex items-start gap-3">
                 
                 <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-2xl">
-                    {item.image || item.categoryIcon || '🛒'}
+                    {item.image || item.categoryIcon}
                 </div>
                 
                

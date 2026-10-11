@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { PriceItem } from '@/types';
+import ProtectedRoute from '@/app/components/ProtectedRoute';
 
 interface DetailPageProps {
     params: Promise<{ productId: string }>;
@@ -63,7 +64,8 @@ const ProductDetailPage = async ({ params }: DetailPageProps) => {
     const isDown = product.change.dir === 'down';
 
     return (
-            <div className="w-full bg-gray-50 min-h-screen py-6">
+           <ProtectedRoute>
+             <div className="w-full bg-gray-50 min-h-screen py-6">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
                
@@ -190,6 +192,7 @@ const ProductDetailPage = async ({ params }: DetailPageProps) => {
 
             </div>
         </div>
+           </ProtectedRoute>
     );
 };
 

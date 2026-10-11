@@ -4,6 +4,7 @@ import NavLinks from './NavLinks';
 import DateDisplay from './DateDisplay';
 import PriceMarquee from './PriceMarquee';
 import Link from 'next/link';
+import UserMenu from './UserMenu';
 
 const Navbar = () => {
    
@@ -30,14 +31,7 @@ const Navbar = () => {
                 </Link>
 
                 
-                <div className="flex items-center gap-4">
-                    <button className="text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
-                        সাইন ইন
-                    </button>
-                    <button className="bg-[#2e7d32] hover:bg-[#1b5e20] text-white text-sm font-medium px-5 py-2 rounded-md transition-colors">
-                        সাইন আপ
-                    </button>
-                </div>
+               <UserMenu />
 
             </div>
             <NavLinks></NavLinks>

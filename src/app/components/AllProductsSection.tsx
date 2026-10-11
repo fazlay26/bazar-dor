@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ProductCard from './ProductCard';
 import { PriceItem } from '@/types';
 
@@ -10,7 +10,8 @@ const AllProductsSection = ({ products }: AllProductsSectionProps) => {
     if (products.length === 0) return null;
 
     return (
-        <section id="সব-পণ্য" className="w-full py-8 scroll-mt-20">
+  
+            <section id="সব-পণ্য" className="w-full py-8 scroll-mt-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 
@@ -32,6 +33,7 @@ const AllProductsSection = ({ products }: AllProductsSectionProps) => {
 
             </div>
         </section>
+    
     );
 };
 
