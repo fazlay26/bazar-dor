@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 BazarDor
 
-## Getting Started
+> **Daily Market Prices of Bangladesh at a Glance**
 
-First, run the development server:
+BazarDor is a modern web application that presents daily commodity prices from various markets across Bangladesh in one place. Users can easily check today's prices of rice, lentils, oil, vegetables, fish, meat, eggs, milk, and spices, and compare them with last week's or last month's prices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![BazarDor Banner](https://img.shields.io/badge/BazarDor-Market%20Prices-2e7d32?style=for-the-badge)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is built with modern web development technologies:
 
-## Learn More
+| Technology | Purpose |
+|---|---|
+| **Next.js 15** | React framework with App Router |
+| **TypeScript** | Type safety and improved developer experience |
+| **Tailwind CSS** | Rapid and modern UI design |
+| **DaisyUI** | Tailwind-based UI component library |
+| **Better Auth** | Secure authentication system |
+| **MongoDB** | NoSQL database |
+| **MongoDB Adapter** | Database management for Better Auth |
+| **React Hot Toast** | Beautiful notification system |
+| **React Fast Marquee** | Scrolling price ticker |
+| **Next.js Image** | Image optimization |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. 📊 Today's Market Prices at a Glance
+The home page displays today's prices of all commodities, separate sections for products whose prices have increased or decreased, and detailed information for each product. A scrolling marquee at the top shows the latest prices of all products.
 
-## Deploy on Vercel
+### 2. 📈 Price Change Analysis
+For each product, users can compare today's price with yesterday's, last week's, and last month's prices. Price changes are clearly shown in three categories: increased (▲ red), decreased (▼ green), and unchanged (● gray).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. 🏪 Market-Wise Price Comparison
+For every product, the minimum, maximum, and average prices across 12 markets in Bangladesh (Karwan Bazar, Green Market, Chouddagram Bazar, etc.) are displayed in a table. This allows users to easily identify which market offers lower or higher prices.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. 🔐 Complete Authentication System
+Users can sign up and sign in using Email/Password, Google, or GitHub via Better Auth. Protected routes ensure that certain pages are only accessible to logged-in users. Users can update their profile information (name).
+
+### 5. 🔍 Category Filter and Sorting
+Through the navbar, users can click on any of the 8 categories — Rice, Lentils, Oil, Vegetables, Fish, Meat, Egg-Milk, Spices — to view all products in that category. A sorting dropdown allows products to be sorted by price (low-high/high-low) or by name.
+
+---
+
+## 📁 Project Structure
