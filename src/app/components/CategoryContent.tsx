@@ -31,7 +31,6 @@ const CategoryContent = ({ products }: CategoryContentProps) => {
         }
     }, [products, sortBy]);
 
-    // Empty State: কোনো পণ্য না থাকলে
     if (products.length === 0) {
         return (
             <EmptyState

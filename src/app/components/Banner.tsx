@@ -17,13 +17,13 @@ const HeroSection = () => {
                           <DateDisplay></DateDisplay>
                         </div>
 
-                        {/* বড় হেডলাইন */}
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                        
+                        <h1 className=" text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                             আজকের বাজারের দাম এক নজরে
                         </h1>
 
                         
-                        <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-lg">
+                        <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-lgb">
                             চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বোচ্চ এবং দামের পরিবর্তন এক জায়গায়।
                         </p>
 

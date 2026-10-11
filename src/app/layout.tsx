@@ -16,9 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 const notoSansBengali = Noto_Sans_Bengali({
-    variable: "--font-noto-sans-bengali", // এই নামটিই globals.css এ ব্যবহার হবে
+    variable: "--font-noto-sans-bengali",
     subsets: ["bengali", "latin"],
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",

@@ -24,7 +24,7 @@ const ProfileContent = () => {
         <div className="w-full bg-gray-50 min-h-screen py-8">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* হেডার */}
+               
                 <div className="mb-6">
                     <h1 className="text-2xl font-bold text-gray-900 mb-1">
                         আমার প্রোফাইল
@@ -34,7 +34,7 @@ const ProfileContent = () => {
                     </p>
                 </div>
 
-                {/* প্রোফাইল কার্ড */}
+                
                 <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
                     <div className="flex items-center justify-between gap-4 flex-wrap">
                         {/* বাম: ছবি + নাম + ইমেইল */}
@@ -66,7 +66,7 @@ const ProfileContent = () => {
                     </div>
                 </div>
 
-                {/* তথ্য আপডেট কার্ড */}
+                
                 <div className="bg-white border border-gray-200 rounded-2xl p-6">
                     <h3 className="text-base font-bold text-gray-800 mb-4">
                         তথ্য

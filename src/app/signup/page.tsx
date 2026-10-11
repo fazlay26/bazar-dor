@@ -15,16 +15,16 @@ const SignUpPage = () => {
         password: '',
     });
 
-    // ইনপুট পরিবর্তন হ্যান্ডল করা
+   
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // ইমেইল/পাসওয়ার্ড সাইন আপ
+   
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // ভ্যালিডেশন
+       
         if (!formData.name || !formData.email || !formData.password) {
             toast.error('সব ঘর পূরণ করুন');
             return;
@@ -57,7 +57,7 @@ const SignUpPage = () => {
         }
     };
 
-    // সোশ্যাল লগইন (Google)
+    
     const handleGoogleSignIn = async () => {
         try {
             await signIn.social({
@@ -69,7 +69,7 @@ const SignUpPage = () => {
         }
     };
 
-    // সোশ্যাল লগইন (GitHub)
+    
     const handleGithubSignIn = async () => {
         try {
             await signIn.social({
@@ -84,10 +84,10 @@ const SignUpPage = () => {
     return (
         <div className="w-full bg-gray-50 min-h-screen flex items-center justify-center py-12 px-4">
             <div className="w-full max-w-md">
-                {/* কার্ড */}
+               
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
                     
-                    {/* টাইটেল */}
+                    
                     <div className="text-center mb-8">
                         <h1 className="text-2xl font-bold text-gray-900 mb-2">
                             অ্যাকাউন্ট তৈরি করুন
@@ -97,9 +97,9 @@ const SignUpPage = () => {
                         </p>
                     </div>
 
-                    {/* ফর্ম */}
+                    
                     <form onSubmit={handleSubmit} className="space-y-4">
-                        {/* নাম */}
+                        
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 নাম
@@ -114,7 +114,7 @@ const SignUpPage = () => {
                             />
                         </div>
 
-                        {/* ইমেইল */}
+                       
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 ইমেইল
@@ -129,7 +129,7 @@ const SignUpPage = () => {
                             />
                         </div>
 
-                        {/* পাসওয়ার্ড */}
+                       
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 পাসওয়ার্ড
@@ -144,7 +144,7 @@ const SignUpPage = () => {
                             />
                         </div>
 
-                        {/* রেজিস্টার বাটন */}
+                      
                         <button
                             type="submit"
                             disabled={loading}
@@ -157,16 +157,16 @@ const SignUpPage = () => {
                         </button>
                     </form>
 
-                    {/* ডিভাইডার */}
+                   
                     <div className="flex items-center gap-4 my-6">
                         <div className="flex-1 h-px bg-gray-200"></div>
                         <span className="text-xs text-gray-400">অথবা</span>
                         <div className="flex-1 h-px bg-gray-200"></div>
                     </div>
 
-                    {/* সোশ্যাল লগইন */}
+                    
                     <div className="space-y-3">
-                        {/* Google */}
+                       
                         <button
                             onClick={handleGoogleSignIn}
                             type="button"
@@ -181,7 +181,7 @@ const SignUpPage = () => {
                             Google দিয়ে রেজিস্টার করুন
                         </button>
 
-                        {/* GitHub */}
+                       
                         <button
                             onClick={handleGithubSignIn}
                             type="button"
@@ -194,7 +194,7 @@ const SignUpPage = () => {
                         </button>
                     </div>
 
-                    {/* লগইন লিংক */}
+                    
                     <p className="text-center text-sm text-gray-600 mt-6">
                         আগে থেকেই অ্যাকাউন্ট আছে?{' '}
                         <Link href="/signin" className="text-[#2e7d32] font-medium hover:underline">

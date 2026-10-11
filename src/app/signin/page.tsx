@@ -15,12 +15,12 @@ const SignInPage = () => {
         password: '',
     });
 
-    // ইনপুট পরিবর্তন
+   
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // ইমেইল/পাসওয়ার্ড সাইন ইন
+    
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -52,7 +52,7 @@ const SignInPage = () => {
         }
     };
 
-    // সোশ্যাল লগইন (Google)
+    
     const handleGoogleSignIn = async () => {
         try {
             await signIn.social({
@@ -64,7 +64,7 @@ const SignInPage = () => {
         }
     };
 
-    // সোশ্যাল লগইন (GitHub)
+    
     const handleGithubSignIn = async () => {
         try {
             await signIn.social({
@@ -81,7 +81,7 @@ const SignInPage = () => {
             <div className="w-full max-w-md">
                 <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
 
-                    {/* টাইটেল */}
+                    
                     <div className="text-center mb-8">
                         <h1 className="text-2xl font-bold text-gray-900 mb-2">
                             লগইন করুন
@@ -91,9 +91,9 @@ const SignInPage = () => {
                         </p>
                     </div>
 
-                    {/* ফর্ম */}
+                    
                     <form onSubmit={handleSubmit} className="space-y-4">
-                        {/* ইমেইল */}
+                        
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 ইমেইল
@@ -108,7 +108,7 @@ const SignInPage = () => {
                             />
                         </div>
 
-                        {/* পাসওয়ার্ড */}
+                        
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                                 পাসওয়ার্ড
@@ -123,7 +123,7 @@ const SignInPage = () => {
                             />
                         </div>
 
-                        {/* লগইন বাটন */}
+                       
                         <button
                             type="submit"
                             disabled={loading}
@@ -136,14 +136,14 @@ const SignInPage = () => {
                         </button>
                     </form>
 
-                    {/* ডিভাইডার */}
+                    
                     <div className="flex items-center gap-4 my-6">
                         <div className="flex-1 h-px bg-gray-200"></div>
                         <span className="text-xs text-gray-400">অথবা</span>
                         <div className="flex-1 h-px bg-gray-200"></div>
                     </div>
 
-                    {/* সোশ্যাল লগইন */}
+                    
                     <div className="space-y-3">
                         <button
                             onClick={handleGoogleSignIn}
@@ -171,7 +171,7 @@ const SignInPage = () => {
                         </button>
                     </div>
 
-                    {/* রেজিস্টার লিংক */}
+                    
                     <p className="text-center text-sm text-gray-600 mt-6">
                         অ্যাকাউন্ট নেই?{' '}
                         <Link href="/signup" className="text-[#2e7d32] font-medium hover:underline">

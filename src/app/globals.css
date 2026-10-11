@@ -2,13 +2,14 @@
 @plugin "daisyui";
 
 @theme {
-  --font-bengali: var(--font-noto-sans-bengali), sans-serif;
+  --font-bengali: var(--font-noto-sans-bengali);
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-    color: #1f2937; /* gray-800 */
-    background-color: #f9fafb; /* gray-50 */
+  color: #1f2937;
+  background-color: #f9fafb;
 }

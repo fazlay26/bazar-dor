@@ -45,7 +45,7 @@ const ProductCard = ({ item }: ProductCardProps) => {
 
            
             <div className="flex items-end justify-between mt-4">
-                {/* দাম */}
+               
                 <div className="flex flex-col">
                     <span className="text-xs text-gray-500">আজকের দাম</span>
                     <span className="text-lg font-bold text-gray-900">

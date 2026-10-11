@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { authClient } from '../lib/auth-client';
 
 
-// প্রপ হিসেবে initialName নিচ্ছি
+
 interface UpdateProfileFormProps {
     initialName?: string;
     initialEmail?: string;
@@ -17,7 +17,7 @@ const UpdateProfileForm = ({ initialName = '', initialEmail = '' }: UpdateProfil
     const [loading, setLoading] = useState(false);
     const [name, setName] = useState(initialName); // ← সরাসরি ইনিশিয়াল ভ্যালু
 
-    // useEffect বাদ দেওয়া হয়েছে
+   
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
